@@ -1,0 +1,23 @@
+const int* rec_lsr(const int *begin, const int *end, int x)
+{
+  if (begin == end)
+    return end;
+  return *begin == x ? begin : rec_lsr(begin + 1, end, x);
+}
+
+const int* itr_lsr(const int *begin, const int *end, int x)
+{
+  for (; begin != end; ++begin)
+    if (*begin == x)
+      break;const int* rec_lsr(const int *begin, const int *end, int x)
+{
+  if (begin == end)
+    return end;
+  return *begin == x ? begin : rec_lsr(begin + 1, end, x);
+}
+
+const int* itr_lsr(const int *begin, const int *end, int x)
+{
+  for (; begin != end; ++begin)
+    if (*begin == x)
+      break;
